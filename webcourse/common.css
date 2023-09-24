@@ -4,13 +4,14 @@
     --main-color: #00262B;
     --secondary-color: #D23228;
     --body-color: #EAEAEA;
+    --gray-color: #e1dddb;
 
     --main-font: 'Inter', sans-serif;
     --anu-font: 'Roboto', sans-serif;
 }
 
 body{
-    background-color: var(--body-color);
+    background-color: var(--gray-color);
     font-family: var(--main-font);
 }
 
@@ -106,7 +107,7 @@ section{
 .landing{
     display: flex;
     align-items: center;
-    background-color: #e1dddb;
+    background-color: var(--gray-color);
     gap: 0;
 }
 .content1-wrapper{
@@ -162,13 +163,34 @@ section{
 }
 .decor{
     position: relative;
-    top: -10px;
+    top: -365px;
+    left: 120px;
     background-color: var(--main-color);
-    /* width: 10px; */
-    height: 70px;
+    width: 10px;
+    height: 175px;
 }
 
+.card-wrapper{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-evenly;
+}
 
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 20%;
+  text-align: center;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container-card{
+  padding: 40px 40px;
+  text-align: justify;
+}
 
 
 
